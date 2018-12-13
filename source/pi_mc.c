@@ -20,6 +20,8 @@ int main(int argc, char* argv[]) {
   
   MPI_Status status;
   start = MPI_Wtime();
+  
+  nPointsTotal = atoi(argv[1]);
 
   MPI_Init(&argc, &argv);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
